@@ -1,0 +1,211 @@
+/*  通用样式  */
+@E61850:#E61850;//背景颜色
+@000:#000;//字体默认颜色
+@C81623:#C81623;//主页暗红色
+@FF0000:#FF0000;//显著字体颜色
+@848484:#848484;//footer字体颜色
+@FFF6D2:#FFF6D2;//弹出框颜色
+@FFE57D:#FFE57D;//弹出框边框颜色
+@8A8880:#8A8880;//弹出框字体颜色
+@BDBDBD:#BDBDBD;//表单边框颜色
+@E4393C:#E4393C;//京东红
+body,h1,h2,h3,h4,h5,h6,ol,dl,ul,dd,dt,li,img,p,button,input,a{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.content{
+  content:"";
+  display: block;
+  clear: both;
+}
+a{
+  text-decoration:none;
+  color:@000;
+  cursor:pointer;
+  &:hover{
+    color:@FF0000;
+  }
+}
+/*  header  */
+header{
+  width:990px;
+  margin:0 auto;
+  s{
+    width:159px;
+    height:43px;
+    float: left;
+    background:url("../imgs/jd_img.png") no-repeat -235px 0;
+    margin:10px 0;
+  }
+  b{
+    font:24px "microsoft yahei";
+    line-height:43px;
+    float: left;
+    margin:10px 30px;
+  }
+}
+header:after{
+  .content;
+}
+/*  main  */
+main{
+  width:100%;
+  height:475px;
+  background:@E61850 url("../imgs/jd_login.jpg") no-repeat;
+  .main_ctn{
+    padding:20px;
+    width:305px;
+    height:315px;
+    background:#fff;
+    float:right;
+    margin-top:50px;
+    margin-right:100px;
+    .main_title{
+      overflow: hidden;
+      span{
+        float:left;
+        font-size:18px;
+      }
+      a{
+        float:right;
+        padding-left: 8px;
+      }
+      s{
+        width:16px;
+        height:16px;
+        float:right;
+        background:url("../imgs/pwd-icons-new.png") no-repeat -104px -75px;
+      }
+    }
+    .main_alert{
+      width:303px;
+      height:30px;
+      background:@FFF6D2;
+      margin-top:10px;
+      margin-bottom:10px;
+      border:1px solid @FFE57D;
+      font:13px "microsoft yahei";
+      line-height:30px;
+      color:@8A8880;
+      s{
+        width:12px;
+        height:26px;
+        display: inline-block;
+        background:url("../imgs/pwd-icons-new.png") no-repeat -104px -20px;
+        margin:0 10px;
+        vertical-align: middle;
+      }
+    }
+    #frm{
+      div{
+        height:40px;
+        margin-bottom: 15px;
+      }
+      i{
+        width:38px;
+        height:38px;
+        display: inline-block;
+        background:url("../imgs/pwd-icons-new.png");
+        border:1px solid @BDBDBD;
+        border-right:0;
+        float:left;
+      }
+      #uname{
+        width:252px;
+        float:left;
+        padding-left:10px;
+        height:36px;
+      }
+      b{
+        width:38px;
+        height:38px;
+        display: inline-block;
+        background:url("../imgs/pwd-icons-new.png") no-repeat -48px 0;
+        border:1px solid @BDBDBD;
+        border-right:0;
+        float:left;
+      }
+      #upwd{
+        width:252px;
+        float:left;
+        height:36px;
+        padding-left:10px;
+      }
+    }
+    .main_auto{
+      height:20px;
+      line-height: 20px;
+      p{
+        #auto_login{
+          display: inline-block;
+          vertical-align: middle;
+        }
+        label{
+          font-size: 14px;
+          color:@8A8880;
+        }
+        width:100px;
+        float:left;
+      }
+      a{
+        font-size: 14px;
+        float:right;
+
+      }
+    }
+    >button{
+      width:100%;
+      height:40px;
+      background:@E4393C;
+      border:0;
+      font:18px "microsoft yahei";
+      text-align: center;
+      color:#fff;
+      margin:15px 0;
+    }
+    .partner_login{
+      >h5{
+        color:@8A8880;
+        font-weight: 100;
+      }
+      >p{
+        a,span{
+          color:@8A8880;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+/*  footer  */
+footer{
+  >div{
+    width:990px;
+    height:30px;
+    margin:0 auto;
+    text-align:right;
+    line-height: 30px;
+    a{
+      font-size:12px;
+      color:@848484;
+    }
+    s{
+      width:18px;
+      height:14px;
+      display: inline-block;
+      vertical-align: middle;
+      padding-left:5px;
+      background:url("../imgs/jd_img.png") no-repeat -205px 0px;
+    }
+  }
+  p{
+    text-align:center;
+    padding:10px 0;
+    font-size:13px;
+    color:@848484;
+    a{
+      color:@848484;
+    }
+  }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <header>
+        <div class="header_ctn">
+            <a href="jd_index.html"><s></s></a>
+            <div>欢迎注册</div>
+            <span>已有账号<a href="jd_login.html">请登录</a></span>
+        </div>
+    </header>
+    <main>
+        <div class="main_left">
+            <form id="register_frm" action="jd_register.php">
+                <div>
+                    <label for="uname">用户名</label>
+                    <input type="text" placeholder="您的账户名和登录名" id="uname" name="uname">
+                </div>
+                <span></span>
+                <div class="hint"><s></s>您输入的内容不能为空</div>
+                <div>
+                    <label for="upwd">设置密码</label>
+                    <input type="text" placeholder="建议至少使用两种字符组合" id="upwd" name="upwd">
+                </div>
+                <span></span>
+                <div class="hint"><s></s>8到16位 必须包含字母或数字</div>
+                <div>
+                    <label for="upwd_again">确认密码</label>
+                    <input type="text" placeholder="请再次输入密码" id="upwd_again" name="upwd_again">
+                </div>
+                <span></span>
+                <div class="hint"><s></s>两次密码输入不一致</div>
+                <div>
+                    <label for="tel">中国+86</label>
+                    <input type="text" placeholder="建议使用常用手机" id="tel" name="tel">
+                </div>
+                <span></span>
+                <div class="hint"><s></s>请输入正确的手机号码</div>
+                <div class="check_code">
+                    <label for="check_code">验证码</label>
+                    <input type="text" placeholder="请输入验证码" id="check_code">
+                    <label for="check_code" class="code"><div><canvas id="d2" width="94" height="32">您的浏览器不支持canvas</canvas></div></label>
+                </div>
+                <span></span>
+                <div class="hint"><s></s>请输入正确的验证码</div>
+                <div class="reread">
+                    <input type="checkbox" id="has_agree"><span>我已阅读并同意 <a href="#">《京东用户注册协议》</a></span>
+                </div>
+            </form>
+            <button id="register_btn" disabled>立即注册</button>
+        </div>
+        <div class="main_right">
+            <div class="main_right_ctn">
+                <s></s>
+                <div><i></i>企业用户注册</div>
+                <div><a></a>INTERNATIONAL</div>
+            </div>
+        </div>
+    </main>
+    <aside></aside>
+    <footer>
+        <p class="links">
+            <a href="#">关于我们</a>
+            <span>|</span>
+            <a href="#">联系我们</a>
+            <span>|</span>
+            <a href="#">人才招聘</a>
+            <span>|</span>
+            <a href="#">商家入驻</a>
+            <span>|</span>
+            <a href="#">广告服务</a>
+            <span>|</span>
+            <a href="#">手机京东</a>
+            <span>|</span>
+            <a href="#">商家入驻</a>
+            <span>|</span>
+            <a href="#">友情链接</a>
+            <span>|</span>
+            <a href="#">销售联盟</a>
+            <span>|</span>
+            <a href="#">京东社区</a>
+            <span>|</span>
+            <a href="#">京东公益</a>
+            <span>|</span>
+            <a href="#">English Site</a>
+        </p>
+        <p class="copy">Copyright&copy;2004-2016  京东JD.com 版权所有</p>
+    </footer>
+	<script src="js/jquery-1.11.3.js"></script>
+    <script src="js/jd_register.js"></script>
+</body>
+</html>

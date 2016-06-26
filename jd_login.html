@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <header>
+        <a href="jd_index.html"><s></s></a>
+        <b>欢迎登陆</b>
+    </header>
+    <main>
+        <div class="main_ctn">
+            <div class="main_title">
+                <span>京东会员</span>
+                <a href="jd_register.html">立即注册</a>
+                <s></s>
+            </div>
+            <div class="main_alert"><s></s>公共场所不建议自动登陆，以防账号丢失</div>
+            <form id="frm">
+                <div>
+                    <label for="uname"><i></i></label>
+                    <input type="text" id="uname" name="uname" placeholder="邮箱/用户名/已验证手机">
+					<span></span>
+                </div>
+                <div>
+                    <label for="uname"><b></b></label>
+                    <input type="text" id="upwd" name="upwd" placeholder="密码">
+					<span></span>
+                </div>
+            </form>
+            <div class="main_auto">
+                <p>
+                    <input type="checkbox" id="auto_login">
+                    <label for="auto_login">自动登录</label>
+                </p>
+                <a href="#">忘记密码？</a>
+            </div>
+            <button id="login_btn">登&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+            <div class="login_bottom">
+                <div class="partner_login">
+                    <h5>使用合作网站账号登录京东</h5>
+                    <p>
+                        <a href="#">京东钱包</a>
+                        <span>|</span>
+                        <a href="#">QQ</a>
+                        <span>|</span>
+                        <a href="#">微信</a>
+                    </p>
+                </div>
+                <!--<div class="two_code">-->
+                    <!--<img src="#" alt="">-->
+                <!--</div>-->
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div><s></s><a href="#">页面登录，问卷调查</a></div>
+        <p class="links">
+            <a href="#">关于我们</a>
+            <span>|</span>
+            <a href="#">联系我们</a>
+            <span>|</span>
+            <a href="#">人才招聘</a>
+            <span>|</span>
+            <a href="#">商家入驻</a>
+            <span>|</span>
+            <a href="#">广告服务</a>
+            <span>|</span>
+            <a href="#">手机京东</a>
+            <span>|</span>
+            <a href="#">商家入驻</a>
+            <span>|</span>
+            <a href="#">友情链接</a>
+            <span>|</span>
+            <a href="#">销售联盟</a>
+            <span>|</span>
+            <a href="#">京东社区</a>
+            <span>|</span>
+            <a href="#">京东公益</a>
+            <span>|</span>
+            <a href="#">English Site</a>
+        </p>
+        <p class="copy">Copyright&copy;2004-2016  京东JD.com 版权所有</p>
+    </footer>
+	<script src="js/jquery-1.11.3.js"></script>
+    <script>
+        /*  jd_login  */
+        $('#login_btn').click(function(){
+            var result = $('#frm').serialize();
+            $.get('data/jd_login.php',result,function(data){
+                var sdata=JSON.parse(data);
+                if(sdata.upid>0){
+                    console.log("1")
+                    localStorage.setItem(sdata.upid,sdata.msg);
+                    window.location.href="jd_index.html";
+//                    $("#login_name").html("您好"+data.msg);
+                }else{
+                    $(".main_alert").html("<s></s>您输入的用户名或密码有误")
+                }
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+/*  通用样式  */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+dl,
+ul,
+dd,
+dt,
+li,
+img,
+p,
+button,
+input,
+a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.content {
+  content: "";
+  display: block;
+  clear: both;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+}
+a:hover {
+  color: #ff0000;
+}
+.visible {
+  opacity: 1 !important;
+}
+.err {
+  width: 16px;
+  height: 16px;
+  float: left;
+  margin: 12px 10px;
+  background: url("../imgs/icon.png") no-repeat -17px -100px;
+}
+.turn_red {
+  border-color: #ff0000 !important;
+}
+.right {
+  width: 16px;
+  height: 16px;
+  float: left;
+  margin: 12px 10px;
+  background: url("../imgs/icon.png") no-repeat 0px -117px;
+}
+/*  header  */
+header {
+  padding: 10px 0;
+  border-bottom: 3px solid #f1f1f1;
+}
+header .header_ctn {
+  width: 1210px;
+  margin: 0 auto;
+}
+header .header_ctn s {
+  width: 159px;
+  height: 43px;
+  float: left;
+  background: url("../imgs/jd_img.png") no-repeat -235px 0;
+  margin: 10px 0;
+}
+header .header_ctn div {
+  width: 150px;
+  height: 40px;
+  padding-left: 20px;
+  border-left: 1px solid #bdbdbd;
+  line-height: 40px;
+  margin: 11.5px 20px;
+  float: left;
+  font: 24px "microsoft yahei";
+}
+header .header_ctn span {
+  color: #999999;
+  font: 700 15px "microsoft yahei";
+  float: right;
+  margin-top: 35px;
+}
+header .header_ctn span a {
+  padding-left: 5px;
+  font: 700 15px "microsoft yahei";
+}
+header:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/*  main  */
+main {
+  width: 824px;
+  margin: 40px auto;
+}
+main .main_left {
+  width: 502px;
+  float: left;
+}
+main .main_left #register_frm .hint {
+  width: 100%;
+  height: 30px;
+  color: #999999;
+  opacity: 0;
+  font-size: 13px;
+  line-height: 30px;
+}
+main .main_left #register_frm .hint s {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: url("../imgs/icon.png") no-repeat 0 -100px;
+  vertical-align: sub;
+  margin-right: 10px;
+}
+main .main_left #register_frm > div {
+  width: 333px;
+  height: 40px;
+  float: left;
+}
+main .main_left #register_frm > div label {
+  width: 68px;
+  height: 38px;
+  display: inline-block;
+  border: 1px solid #bdbdbd;
+  border-right: 0;
+  float: left;
+  text-align: center;
+  color: #666666;
+  font: 13px "microsoft yahei";
+  line-height: 38px;
+  transition: background 1s;
+}
+main .main_left #register_frm > div input[type="text"] {
+  width: 252px;
+  float: left;
+  border: 1px solid #bdbdbd;
+  border-left: 0;
+  padding-left: 10px;
+  height: 38px;
+}
+main .main_left #register_frm > div #tel {
+  width: 251px;
+  float: left;
+  border: 1px solid #bdbdbd;
+  padding-left: 10px;
+  height: 38px;
+}
+main .main_left #register_frm > div #check_code {
+  width: 152px;
+  float: left;
+  border: 1px solid #bdbdbd;
+  border-right: 0;
+  height: 38px;
+}
+main .main_left #register_frm > div .code {
+  width: 94px;
+  height: 32px;
+  border: 1px solid #bdbdbd;
+  border-left: 0;
+  padding: 3px;
+}
+main .main_left #register_frm > div .code div {
+  width: 94px;
+  height: 32px;
+}
+main .main_left #register_frm .reread {
+  margin: 0;
+}
+main .main_left #register_frm .reread span {
+  font: 13px "microsoft yahei";
+  padding-left: 10px;
+  vertical-align: text-bottom;
+}
+main .main_left #register_frm .reread span a {
+  color: #3388ff;
+}
+main .main_left #register_frm div:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+main .main_left button {
+  width: 332px;
+  float: left;
+  background-color: #e4393c;
+  border-left: 0;
+  padding-left: 10px;
+  height: 38px;
+  border: 0;
+  color: #fff;
+  font: 16px "microsoft yahei";
+  text-align: center;
+}
+main .main_right {
+  float: left;
+  height: 398px;
+  border-left: 1px solid #bdbdbd;
+}
+main .main_right .main_right_ctn {
+  padding-left: 170px;
+}
+main .main_right .main_right_ctn s {
+  width: 151px;
+  height: 195px;
+  display: inline-block;
+  background: url("../imgs/jd_img.png") no-repeat -303px -145px;
+  margin-bottom: 30px;
+}
+main .main_right .main_right_ctn div {
+  width: 151px;
+  height: 50px;
+  font: 12px "microsoft yahei";
+}
+main .main_right .main_right_ctn div i {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 50px;
+  margin: 10px 10px;
+  background: url("../imgs/icon.png") no-repeat 0 -50px;
+}
+main .main_right .main_right_ctn div a {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 50px;
+  margin: 10px 10px;
+  background: url("../imgs/icon.png") no-repeat -50px -50px;
+}
+main:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/*  aside  */
+aside:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/*  footer  */
+footer p {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 13px;
+  color: #848484;
+}
+footer p a {
+  color: #848484;
+}
+footer:after {
+  content: "";
+  display: block;
+  clear: both;
+}
